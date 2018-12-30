@@ -14,6 +14,11 @@ class TodoList extends Component {
       currEditingText: '',
       completed: new Set([])
     };
+    this.createTodo = this.createTodo.bind(this);
+    this.removeTodo = this.removeTodo.bind(this);
+    this.showEditForm = this.showEditForm.bind(this);
+    this.editTodo = this.editTodo.bind(this);
+    this.toggleCompleted = this.toggleCompleted.bind(this);
   }
 
   createTodo(data) {
