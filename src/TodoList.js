@@ -44,7 +44,7 @@ class TodoList extends Component {
     }));
   }
 
-  EditTodo(newText) {
+  editTodo(newText) {
     let todo = this.state.todos.filter(
       todo => todo.id === this.state.currEditing
     )[0];
